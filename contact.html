@@ -18,10 +18,10 @@
                     <h2 id="header-title">FUTURA</h2>
                 </div>
                 <nav>
-                    <a href="index.html" class="header-nav nav-pagina-actual">HOME</a>
+                    <a href="index.html" class="header-nav">HOME</a>
                     <a href="projects.html" class="header-nav">PROJECTS</a>
                     <a href="compromise.html" class="header-nav">COMPROMISO</a>
-                    <a href="contact.html" class="header-nav">CONTACTANOS</a>
+                    <a href="contact.html" class="header-nav nav-pagina-actual">CONTACTANOS</a>
 
                 </nav>
             </div>
@@ -29,29 +29,27 @@
 
         <main>
             <div id="main-wrapper">
-                <div id="main-top-container">
-                    <img src="photos/top-photo.jpg" id="top-container-image">
-                    <h1 id="main-top-titular">Un futuro sostenible en tus manos</h1>
-                    <a href="compromise.html"><button id="main-top-button">Descubre nuestro proposito</button></a>
+                <div id="main-social-wrapper">
+                    <a href="#instagram" class="social-link">
+                        <h1 class="social-link" id="social-i"></h1>
+                    </a>
+                    <a href="#twitter" class="social-link">
+                        <h1 class="social-link" id="social-tw"></h1>
+                    </a>
+                    <h1 class="social-link" id="social-te"></h1>
                 </div>
-                <div id="godown"><img src="photos/flecha.png" alt="" id="godown-director"></div>
-                <div id="main-info-section">
-                    <div id="info-section-left">
-                        <img src="photos/robot.png" alt="" id="info-section-image">
-                    </div>
-                    <div id="info-section-right">
-                        <h1 class="info-section-title">Futuro sostenible</h1>
-                        <p class="info-section-p">
-                            En Futura creemos que cada acción cuenta para construir un mundo más sostenible.
-                            Nuestro enfoque combina tecnología avanzada, eficiencia energética y responsabilidad social
-                            para crear soluciones que respeten el planeta y mejoren la calidad de vida de las personas.
-                            Desde energías limpias hasta procesos inteligentes y materiales eco-amigables, trabajamos
-                            día a día para garantizar que el progreso no comprometa el medio ambiente.
-                            Únete a nosotros en esta misión y sé parte de un futuro donde la innovación y la
-                            sostenibilidad
-                            van de la mano.
-                        </p>
-                    </div>
+                <div id="space-between"></div>
+                <div id="contact-info-container">
+                    <fieldset>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" class="contact-text-input">
+                        <label for="ocupacion">Ocupación</label>
+                        <input type="text" name="ocupacion" id="ocupacion" class="contact-text-input" placeholder="Ej. Estudiante">
+                        <label for="edad">Edad</label>
+                        <input type="number" name="numero" id="numero" class="contact-text-input">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje"></textarea>
+                    </fieldset>
                 </div>
                 <div id="space-between"></div>
             </div>
@@ -78,7 +76,6 @@
                 </div>
 
             </div>
-
         </footer>
     </div>
 

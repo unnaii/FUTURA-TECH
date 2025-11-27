@@ -137,7 +137,7 @@ main {
     /* FLECHA INDICADORA */
 
 #godown {
-    height: 140px;
+    height: 100px;
     width: 99vw;
     display: flex;
     justify-content: center;
@@ -257,3 +257,109 @@ footer {
 #footer-nav:hover {
     text-decoration: underline white;
 }
+
+
+
+/* COMPROMISE */
+
+/* MAIN */
+
+#info-section-image-comp {
+    width: 700px;
+    border-radius: 0 100px 100px 100px;
+    margin-left: 40px;
+}
+
+#info-section-image-comp2 {
+    width: 700px;
+    border-radius: 100px 0 100px 100px;
+    margin-left: 40px;
+}
+
+
+.info-section-left-comp2 {
+    width: 100%;
+    display: block;
+    padding-left: 40px;
+}
+
+#main-info-section-comp {
+    height: 400px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 30px;
+    align-items: start;
+}
+
+#main-info-section-comp2 {
+    height: 550px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 30px;
+    align-items: start;
+}
+
+.info-section-right-comp2 {
+    display: flex;
+    justify-content: end;
+    padding-right: 50px;
+}
+
+/* CONTACT */
+
+#main-social-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.social-link {
+    color: black;
+    font-weight: 800;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+#social-te::before {
+    content: "TELEFONO";
+}
+
+#social-te:hover::before {
+    content: "688 63 62 63";
+}
+
+#social-tw::before {
+    content: "TWITTER";
+}
+
+#social-tw:hover::before {
+    content: "@futuragroup";
+}
+
+#social-i::before {
+    content: "INSTAGRAM";
+}
+
+#social-i:hover::before {
+    content: "@futuratech";
+}
+
+#contact-info-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border-radius: 50px;
+    padding: 40px;
+    background-color: rgba(22, 28, 32, 0.272);
+    border: none;
+    color: white;
+}
+

@@ -21,7 +21,6 @@ header {
     text-align: center;
 }
 
-
 #header-wrapper {
     width: 99vw;
     display: flex;
@@ -72,8 +71,6 @@ nav {
     text-decoration: overline blue 2px;
 }
 
-
-
 /* MAIN */
 
 main {
@@ -84,8 +81,7 @@ main {
     display: block;
 }
 
-
-    /* FOTO PORTADA */
+/* FOTO PORTADA */
 
 #main-top-container {
     width: 100%;
@@ -130,15 +126,14 @@ main {
 
 #main-top-button:hover {
     background-color: rgb(44, 44, 44);
-        transition: all 0.5s;
-
+    transition: all 0.5s;
 }
 
-    /* FLECHA INDICADORA */
+/* FLECHA INDICADORA */
 
 #godown {
     height: 100px;
-    width: 99vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -148,9 +143,9 @@ main {
     opacity: 80%;
 }
 
-    /* ARTICULOS PAGINA INICIAL */
+/* ARTICULOS PAGINA INICIAL */
 
-        /* ARTICULO 1 */
+/* ARTICULO 1 */
 
 #main-info-section {
     height: 700px;
@@ -180,13 +175,11 @@ main {
     width: 500px;
 }
 
-
 /* SPACER */
 
 #space-between {
     height: 40px;
 }
-
 
 /* FOOTER */
 
@@ -213,9 +206,10 @@ footer {
 }
 
 /* Bloques */
+
 #footer1 {
     display: flex;
-    justify-content: start; /* centrado horizontal */
+    justify-content: start;
 }
 
 #footer2 {
@@ -230,7 +224,6 @@ footer {
     align-items: flex-end;       /* centrado vertical */
     padding-right: 10px;       /* opcional */
 }
-
 
 #footer4 {
     display: flex;
@@ -258,11 +251,18 @@ footer {
     text-decoration: underline white;
 }
 
-
-
 /* COMPROMISE */
 
 /* MAIN */
+
+#main-container {
+    display: flex;
+    justify-content: center;
+}
+
+#main-wrapper-comp {
+    width: 80%;
+}
 
 #info-section-image-comp {
     width: 700px;
@@ -307,16 +307,22 @@ footer {
 
 /* CONTACT */
 
+#contact-main-area {
+    background-image: url(photos/top-photo.jpg);
+    background-attachment: fixed;
+}
+
 #main-social-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
+    background-color: rgba(22, 28, 32, 0.342);
 }
 
 .social-link {
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 800;
     font-size: 40px;
     text-decoration: none;
@@ -354,12 +360,51 @@ footer {
 
 fieldset {
     display: flex;
+    justify-content: center ;
     flex-direction: column;
     width: 600px;
     border-radius: 50px;
     padding: 40px;
-    background-color: rgba(22, 28, 32, 0.272);
+    background-color: rgba(22, 28, 32, 0.342);
     border: none;
     color: white;
 }
 
+label {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: larger;
+}
+
+.contact-text-input {
+    border-radius: 10px;
+    height: 30px;
+    font-size: 1.1;
+    margin-bottom: 20px;
+    border: solid 1px;
+    padding-left: 10px;
+}
+
+#mensaje {
+    font-size: 1.1;
+    height: 200px;
+    border-radius: 10px;
+    border: solid 1px;
+    padding: 10px;
+}
+
+#contact-submit-button {
+    margin-top: 30px;
+    height: 50px;
+    font-size: larger;
+    background-color: rgba(22, 28, 32, 0.377);
+    color: white;
+    font-weight: 600;
+    border: solid 1px white;
+    border-radius: 10px;
+}
+
+#contact-submit-button:active {
+    scale: 0.98;
+    background-color: rgb(22, 28, 32);
+}
